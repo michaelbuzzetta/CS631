@@ -1,10 +1,17 @@
-CC       = cc
-C_FILE   = $(wildcard *.c)
-TARGET   = $(patsubst %.c,%,$(C_FILE))
-CFLAGS   = -O3 -std=c17 -Wall -Werror -pedantic-errors -fmessage-length=0
+CC = cc
+CFLAGS = -Wall -Werror -Wextra
 
-all:
-	$(CC) $(CFLAGS) $(C_FILE) -o $(TARGET)
+PROG = everett
+SRCS = everett.c
+OBJS = ${SRCS:.c=.o}
+
+all: ${PROG}
+
+${PROG}: ${OBJS}
+	${CC} ${CFLAGS} -o ${PROG} ${OBJS}
+
+.c.o:
+	${CC} ${CFLAGS} -c $<
 
 clean:
-	rm -f $(TARGET)
+	rm -f ${OBJS} ${PROG}

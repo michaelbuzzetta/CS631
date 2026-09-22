@@ -16,4 +16,6 @@ then I tackled -n. I implimented and tested this flag. I tested it with normal i
 
 I was debating adding input validation to ensure that the user enters a whole number for the -n flag, and a non-empty string for the -w flag, but that seemed overly complex for the assignment
 
+Once all of that was done, I then cloned the git repo to the ssh server, where I ran into an issue with my Makefile, so I updated it, also removing the specifications so that it was a universal makefile, rather than just an everett makefile.
+
 Overall, this was a very effective introduction to C
