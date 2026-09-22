@@ -7,8 +7,9 @@ main(int argc, char *argv[])
 {
     int option;
     char *word = "World";
+    int count = 1;
     
-    while ((option = getopt(argc, argv, "hw:")) !=-1) {
+    while ((option = getopt(argc, argv, "hn:w:")) !=-1) {
         switch (option) {
         case 'h':
             printf("usage: everett [-h] [-n num] [-w word]\n");
@@ -19,7 +20,6 @@ main(int argc, char *argv[])
         default:
             return EXIT_FAILURE;
         }
-    }
-
-    printf ("Hеllo, %s!\n", word);
+        
+    return EXIT_SUCCESS;
 }
