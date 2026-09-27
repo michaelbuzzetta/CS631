@@ -1,17 +1,17 @@
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
 
-PROG = everett
-SRCS = everett.c
-OBJS = ${SRCS:.c=.o}
+SRCS = $(wildcard *.c)
+PROG = $(SRCS:.c=)
+OBJS = $(SRCS:.c=.o)
 
-all: ${PROG}
+all: $(PROG)
 
-${PROG}: ${OBJS}
-	${CC} ${CFLAGS} -o ${PROG} ${OBJS}
+$(PROG): $(OBJS)
+	$(CC) $(CFLAGS) -o $(PROG) $(OBJS)
 
 .c.o:
-	${CC} ${CFLAGS} -c $<
+	$(CC) $(CFLAGS) -c $<
 
 clean:
-	rm -f ${OBJS} ${PROG}
+	rm -f $(OBJS) $(PROG)
