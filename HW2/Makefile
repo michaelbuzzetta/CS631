@@ -1,5 +1,5 @@
 CC = cc
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror
 
 SRCS = $(wildcard *.c)
 PROG = $(SRCS:.c=)
