@@ -1,0 +1,25 @@
+I was traveling this week, so the log and timestamps are a little unreliable,
+I had to recreate the repo for this assignment and copy over the initial code
+so the first few submissions copied from previous versions of this assignment
+that I began. I made the first few commits as authentic as I could, commiting
+the file creation first, then the first part, then the next, rather than one
+big git push of everything I had done up to that point, in an attempt to show
+the initial process.
+
+I started this assignment by first writing the program defiition and initial
+variable assignments.
+
+I then implimented the code to open the source file and read the content, then
+I wrote the code to prevent directories from being source files, and code
+to reject source file not owned by root. I then wrote error checking code
+and ran several tests.
+
+I then wrote the code for the destination, checking if it exists, and if now,
+making the destination file. Added a read and write loop to copy the contents
+from source to destination
+I then wrote code to close both files when the writing was done.
+
+I then added error handling and checking and updated existing error checks,
+then tested several different cases, including fake files, directories, 
+empty files, and very large files and checked that the copied files were
+correct.

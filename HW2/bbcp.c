@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
         fprintf(stderr, "Usage: %s source target\n", argv[0]);
         return EXIT_FAILURE;
     }
+
     source = open(argv[1], O_RDONLY);
     if (source == -1)
     {
@@ -55,7 +56,11 @@ int main(int argc, char *argv[])
         return EXIT_FAILURE;
     }
 
-    snprintf(target, sizeof(target), "%s", argv[2]);
+    if (snprintf(target, sizeof(target), "%s", argv[2]) < 0)
+    {
+        close(source);
+        return EXIT_FAILURE;
+    }
 
     if (stat(argv[2], &target_stat) == 0 &&
         S_ISDIR(target_stat.st_mode))
@@ -67,8 +72,12 @@ int main(int argc, char *argv[])
         else
             filename++;
 
-        snprintf(target, sizeof(target), "%s/%s",
-                 argv[2], filename);
+        if (snprintf(target, sizeof(target), "%s/%s",
+                     argv[2], filename) < 0)
+        {
+            close(source);
+            return EXIT_FAILURE;
+        }
     }
 
     destination = open(target, O_WRONLY | O_CREAT | O_TRUNC, 0666);

@@ -1,0 +1,29 @@
+commit cca1a883df29576199b5976399e52fce64e28eb2
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sun Sep 27 19:27:22 2026 -0400
+
+    Destination File Code
+
+commit c2281d06821d1edf093024b9c7718cca9e716e3c
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sun Sep 27 18:42:21 2026 -0400
+
+    Validate Source and Target
+
+commit 5a2ce707ddb837800a824da9ee48ad5f5a480529
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sat Sep 26 12:18:00 2026 -0400
+
+    fstat code
+
+commit 418abba62236c603170fd46f41233fe41c5b6039
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sat Sep 26 11:51:15 2026 -0400
+
+    source error check
+
+commit 9de7e4484948ffdbbbae9d0ca31bc8945fa0dd88
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sat Sep 26 11:36:02 2026 -0400
+
+    initial commit
