@@ -7,6 +7,8 @@
 #include <stdint.h>
 #include <inttypes.h>
 #include <errno.h>
+#include <grp.h>
+#include <time.h>
 
 int main(int argc, char *argv[])
 {
@@ -14,6 +16,9 @@ int main(int argc, char *argv[])
     int e_flag = 0;
     int n_flag = 0;
     struct passwd *pwd;
+    struct group *grp;
+    gid_t groups[128];
+    int found = 128;
 
     while ((option = getopt(argc, argv, "en")) != -1)
     {
@@ -89,12 +94,56 @@ int main(int argc, char *argv[])
         return EXIT_SUCCESS;
     }
 
-    printf("Username: %s\n", pwd->pw_name);
-    printf("Home directory: %s\n", pwd->pw_dir);
-    printf("Login shell: %s\n", pwd->pw_shell);
-    printf("Gecos: %s\n", pwd->pw_gecos);
-    printf("UID: %ju\n", (uintmax_t)pwd->pw_uid);
-    printf("GID: %ju\n", (uintmax_t)pwd->pw_gid);
+    printf("login\t%s\n", pwd->pw_name);
+    printf("passwd\t%s\n", pwd->pw_passwd);
+    printf("uid\t%ju\n", (uintmax_t)pwd->pw_uid);
+
+    if (getgrouplist(pwd->pw_name, pwd->pw_gid, groups, &found) == -1)
+    {
+        fprintf(stderr, "Too many groups\n");
+        return EXIT_FAILURE;
+    }
+
+    printf("groups\t");
+
+    for (int i = 0; i < found; i++)
+    {
+        grp = getgrgid(groups[i]);
+
+        if (grp != NULL)
+        {
+            printf("%s ", grp->gr_name);
+        }
+        else
+        {
+            printf("%ju ", (uintmax_t)groups[i]);
+        }
+    }
+
+    printf("\n");
+
+    if (pwd->pw_change == 0)
+    {
+        printf("change\tNEVER\n");
+    }
+    else
+    {
+        printf("change\t%s", ctime(&pwd->pw_change));
+    }
+
+    printf("class\t%s\n", pwd->pw_class);
+    printf("gecos\t%s\n", pwd->pw_gecos);
+    printf("dir\t%s\n", pwd->pw_dir);
+    printf("shell\t%s\n", pwd->pw_shell);
+
+    if (pwd->pw_expire == 0)
+    {
+        printf("expire\tNEVER\n");
+    }
+    else
+    {
+        printf("expire\t%s", ctime(&pwd->pw_expire));
+    }
 
     return EXIT_SUCCESS;
 }
