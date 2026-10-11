@@ -128,7 +128,15 @@ int main(int argc, char *argv[])
     }
     else
     {
-        printf("change\t%s", ctime(&pwd->pw_change));
+        char *date = ctime(&pwd->pw_change);
+
+        if (date == NULL)
+        {
+            fprintf(stderr, "Unable to convert change date\n");
+            return EXIT_FAILURE;
+        }
+
+        printf("change\t%s", date);
     }
 
     printf("class\t%s\n", pwd->pw_class);
@@ -142,7 +150,15 @@ int main(int argc, char *argv[])
     }
     else
     {
-        printf("expire\t%s", ctime(&pwd->pw_expire));
+        char *date = ctime(&pwd->pw_change);
+
+        if (date == NULL)
+        {
+            fprintf(stderr, "Unable to convert expiration date\n");
+            return EXIT_FAILURE;
+        }
+
+        printf("change\t%s", date);
     }
 
     return EXIT_SUCCESS;

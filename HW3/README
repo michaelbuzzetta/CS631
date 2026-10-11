@@ -1,0 +1,29 @@
+I started this assignment by using the integrated userinfo command on the
+terminal to see my own data. then I began working on the code.
+
+For Homework 1 and 2, I used Agile TDD, where I would write the test cases 
+first, then implement code and test it, upload to github, then continue. 
+For this assignment, I used waterfall. I wrote all of the code, then tested.
+
+This method of development had its pros and cons. I am much more familiar
+with Waterfall as that was my main method of coding for my entire academic
+career. however, for long code that is several hundred lines, TDD is better.
+
+This program came out to around 160 lines.
+
+I started by implimenting the switch cases for the -e and -n flag, then I 
+added all of the easy outputs that did not require extra code like 
+class, uid, username, etc.
+
+I then wrote the logic for everything else, checking how many groups a given
+user was a part of, checking when a user would expire, etc.
+
+One specific issue I encountered was that I was unable to compile on my local
+system, so I had to do all of my initial testing on the ssh server. 
+
+getgrouplist() expects an int array, while NetBSD expects a gid_t array. 
+Since NetBSD is the target system for thisassignment, I compiled and tested 
+my program on the SSH server instead.
+
+Overall, this assignment not too challenging and was a good practice to develop
+actual usable software.
