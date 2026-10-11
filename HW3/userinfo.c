@@ -150,7 +150,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        char *date = ctime(&pwd->pw_change);
+        char *date = ctime(&pwd->pw_expire);
 
         if (date == NULL)
         {
