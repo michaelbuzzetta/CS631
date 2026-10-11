@@ -1,17 +1,17 @@
-CC = cc
-CFLAGS = -Wall -Werror -Wextra
+CC=cc
+CFLAGS=-Wall -Werror -Wextra
 
-SRCS = $(wildcard *.c)
-PROG = $(SRCS:.c=)
-OBJS = $(SRCS:.c=.o)
+PROG=userinfo
+SRCS=userinfo.c
+OBJS=userinfo.o
 
-all: $(PROG)
+all: ${PROG}
 
-$(PROG): $(OBJS)
-	$(CC) $(CFLAGS) -o $(PROG) $(OBJS)
+${PROG}: ${OBJS}
+	${CC} ${CFLAGS} -o ${PROG} ${OBJS}
 
 .c.o:
-	$(CC) $(CFLAGS) -c $<
+	${CC} ${CFLAGS} -c ${.IMPSRC}
 
 clean:
-	rm -f $(OBJS) $(PROG)
+	rm -f ${PROG} ${OBJS}
