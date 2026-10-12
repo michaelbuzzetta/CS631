@@ -158,8 +158,9 @@ int main(int argc, char *argv[])
             return EXIT_FAILURE;
         }
 
-        printf("change\t%s", date);
+        printf("expire\t%s", date);
     }
 
     return EXIT_SUCCESS;
 }
+
