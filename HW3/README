@@ -20,7 +20,7 @@ One specific issue I encountered was that I was unable to compile on my local
 system, so I had to do all of my initial testing on the ssh server. 
 
 Some parts of my code caused compilation issues locally, like the
-system-specific user and group information. While the program compiled on
+system specific user and group information. While the program compiled on
 the NetBSD server, differences between macOS and NetBSD meant that some
 parts would have needed to be changed for my local system.
 
