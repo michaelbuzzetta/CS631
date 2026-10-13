@@ -7,7 +7,7 @@ This method of development had its pros and cons. I am much more familiar
 with Waterfall as that was my main method of coding for my entire academic
 career. However, for long code that is several hundred lines, TDD is better.
 
-This program came out to around 160 lines.
+This program came out to around 180 lines.
 
 I started by implementing the switch cases for the -e and -n flags, then I 
 added all of the easy outputs that did not require extra code like 
@@ -23,6 +23,12 @@ Some parts of my code caused compilation issues locally, like the
 system specific user and group information. While the program compiled on
 the NetBSD server, differences between macOS and NetBSD meant that some
 parts would have needed to be changed for my local system.
+
+Towards the end of the assignment, while doing all my checking, I was
+reviewing my code and changed the hardcoded limit of 128 groups to be
+dynamically allocated by malloc, that way it 1) avoids magic numbers
+and 2) in the event of a user belonging to more than 128 groups, my
+code would be able to handle that.
 
 Overall, this assignment was not too challenging and was a good practice to 
 develop actual usable software.

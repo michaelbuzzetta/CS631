@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
     int n_flag = 0;
     struct passwd *pwd;
     struct group *grp;
-    gid_t groups[128];
-    int found = 128;
+    gid_t *groups = NULL;
+    int found = 0;
 
     while ((option = getopt(argc, argv, "en")) != -1)
     {
@@ -98,9 +98,26 @@ int main(int argc, char *argv[])
     printf("passwd\t%s\n", pwd->pw_passwd);
     printf("uid\t%ju\n", (uintmax_t)pwd->pw_uid);
 
+    getgrouplist(pwd->pw_name, pwd->pw_gid, NULL, &found);
+
+    if (found <= 0)
+    {
+        fprintf(stderr, "Unable to get group count\n");
+        return EXIT_FAILURE;
+    }
+
+    groups = malloc((size_t)found * sizeof(*groups));
+
+    if (groups == NULL)
+    {
+        perror("malloc");
+        return EXIT_FAILURE;
+    }
+
     if (getgrouplist(pwd->pw_name, pwd->pw_gid, groups, &found) == -1)
     {
-        fprintf(stderr, "Too many groups\n");
+        fprintf(stderr, "Unable to get groups\n");
+        free(groups);
         return EXIT_FAILURE;
     }
 
@@ -121,6 +138,8 @@ int main(int argc, char *argv[])
     }
 
     printf("\n");
+
+    free(groups);
 
     if (pwd->pw_change == 0)
     {
@@ -163,4 +182,3 @@ int main(int argc, char *argv[])
 
     return EXIT_SUCCESS;
 }
-
