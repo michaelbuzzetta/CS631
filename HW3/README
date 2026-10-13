@@ -1,7 +1,7 @@
 For Homework 1 and 2, I used Agile TDD, where I would write the test cases 
 first, then implement code and test it, upload to Github, then continue. 
-For this assignment, I used something much more inline with waterfall. 
-I wrote most of the code, then tested, then implimented the last few things.
+For this assignment, I used something much more in line with waterfall. 
+I wrote most of the code, then tested, then implemented the last few things.
 
 This method of development had its pros and cons. I am much more familiar
 with Waterfall as that was my main method of coding for my entire academic
@@ -9,7 +9,7 @@ career. However, for long code that is several hundred lines, TDD is better.
 
 This program came out to around 160 lines.
 
-I started by implementing the switch cases for the -e and -n flag, then I 
+I started by implementing the switch cases for the -e and -n flags, then I 
 added all of the easy outputs that did not require extra code like 
 class, uid, username, etc.
 
@@ -18,6 +18,11 @@ user was a part of, checking when a user would expire, etc.
 
 One specific issue I encountered was that I was unable to compile on my local
 system, so I had to do all of my initial testing on the ssh server. 
+
+Some parts of my code caused compilation issues locally, like the
+system-specific user and group information. While the program compiled on
+the NetBSD server, differences between macOS and NetBSD meant that some
+parts would have needed to be changed for my local system.
 
 Overall, this assignment was not too challenging and was a good practice to 
 develop actual usable software.
