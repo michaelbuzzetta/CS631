@@ -1,0 +1,191 @@
+commit 6f3255d3954783974d4502846aa651b49e2e5588
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Tue Oct 13 11:00:15 2026 -0400
+
+    README
+
+commit bb681071566548976a862fe0a929e7819efdd671
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Mon Oct 12 19:18:53 2026 -0400
+
+    Log
+
+commit e87016cb24d6b1e0a50ba9e5ec3740b65cf54fca
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Mon Oct 12 19:17:55 2026 -0400
+
+    README Spell Check
+
+commit 89c7227f222cdf91a8cbd7d022a7898d4e20cb64
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Mon Oct 12 19:05:00 2026 -0400
+
+    Log
+
+commit b53dbcd5d81b42c13f35dfeb030245035981e6ce
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Mon Oct 12 18:44:35 2026 -0400
+
+    README
+
+commit 2847385c8dece079e4e08a29e43ea07c21d3bb0c
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Mon Oct 12 16:54:03 2026 -0400
+
+    Typo correction
+
+commit 931e8a54f01d88f5cf4b0aaed7b03b4fffeae5a0
+Author: Michael Buzzetta <michaelbuzzetta@Michaels-MacBook-Pro.local>
+Date:   Sun Oct 11 13:02:51 2026 -0400
+
+    error correction
+
+commit 98ecd006ad495422ca388a84ebcac2a293f2b384
+Author: Michael Buzzetta <michaelbuzzetta@Michaels-MacBook-Pro.local>
+Date:   Sun Oct 11 12:53:28 2026 -0400
+
+    Documentation
+
+commit e561cd4a55729ecb2de43163ffc1f9e7cb96a628
+Author: Michael Buzzetta <michaelbuzzetta@Michaels-MacBook-Pro.local>
+Date:   Sun Oct 11 12:51:12 2026 -0400
+
+    Documentation and Error Checking
+
+commit d34ed20a3c606c358b9d70d02a740bc3f253ffe4
+Author: Michael Buzzetta <michaelbuzzetta@Michaels-MacBook-Pro.local>
+Date:   Sun Oct 11 12:15:47 2026 -0400
+
+    Userinfo
+
+commit 91746832ef7c49a661a5e2e7b44fb8d708357cb0
+Author: Michael Buzzetta <michaelbuzzetta@Michaels-MacBook-Pro.local>
+Date:   Sun Oct 11 10:11:10 2026 -0400
+
+    Userinfo Code
+
+commit 853ca002b3feb307e861d968a61a7c30609de469
+Author: Michael Buzzetta <michaelbuzzetta@Michaels-MacBook-Pro.local>
+Date:   Sun Oct 11 10:09:23 2026 -0400
+
+    Userinfo Code
+
+commit 9f7dac361f92313b7c918089e01babe65b132cdf
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Wed Oct 7 19:15:19 2026 -0400
+
+    initial Commit
+
+commit 8d25a99521b78123a96d352ab3d6a7af8a653649
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sun Sep 27 20:01:13 2026 -0400
+
+    Makefile Update
+
+commit 4c2c8aa5c9d0a6749d4d20200169ea88538ebfa6
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sun Sep 27 19:58:35 2026 -0400
+
+    Documentation
+
+commit 469a5b39d0d05075262ff5a5d31259c971c88aff
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sun Sep 27 19:56:39 2026 -0400
+
+    Documentation
+
+commit cca1a883df29576199b5976399e52fce64e28eb2
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sun Sep 27 19:27:22 2026 -0400
+
+    Destination File Code
+
+commit c2281d06821d1edf093024b9c7718cca9e716e3c
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sun Sep 27 18:42:21 2026 -0400
+
+    Validate Source and Target
+
+commit 5a2ce707ddb837800a824da9ee48ad5f5a480529
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sat Sep 26 12:18:00 2026 -0400
+
+    fstat code
+
+commit 418abba62236c603170fd46f41233fe41c5b6039
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sat Sep 26 11:51:15 2026 -0400
+
+    source error check
+
+commit 4f8d52e098ae365e29e467f203a0e95cd0dc6fb5
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sat Sep 26 11:36:56 2026 -0400
+
+    HW1 log
+
+commit 9de7e4484948ffdbbbae9d0ca31bc8945fa0dd88
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Sat Sep 26 11:36:02 2026 -0400
+
+    initial commit
+
+commit e639ca81945c42bd6ffae3f99fed36096d4aaac4
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Tue Sep 22 13:55:44 2026 -0400
+
+    README File Type
+
+commit ebcd1ff1c3a6f96ab5adefdbf219f1185394ba1f
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Tue Sep 22 13:53:43 2026 -0400
+
+    Makefile Update, README update
+
+commit a5f4204e28c159be861f2bec8a1492ac5a4afafc
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Tue Sep 22 13:50:59 2026 -0400
+
+    Makefile Update
+
+commit 9aad60efd022ec7bafe3dd4c562fb81513fdfdc6
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Tue Sep 22 13:44:11 2026 -0400
+
+    Documentation
+
+commit db574c61fcfce5f09777a23113161e7584f785db
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Tue Sep 22 13:42:09 2026 -0400
+
+    n flag implimented
+
+commit e0463f04ed43ab46ce3a64b23aa5fe808a1bcb76
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Tue Sep 22 13:24:38 2026 -0400
+
+    exit success added
+
+commit 54238565209870f503a58755300a93bd1b5d4127
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Tue Sep 22 13:21:48 2026 -0400
+
+    w flag implimented
+
+commit 312994d82a10c7cdc0da7ef3e34690c7add56101
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Tue Sep 22 13:13:17 2026 -0400
+
+    h flag implimented
+
+commit 34624fa8b3a6e10974bfc2d3b0f08aaf342d8c69
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Tue Sep 22 13:09:44 2026 -0400
+
+    HW1 Start
+
+commit bc201ddedb16e3c500a3f81a5c758940287f5482
+Author: Michael Buzzetta <michaelbuzzetta@mac.mynetworksettings.com>
+Date:   Tue Sep 22 13:06:56 2026 -0400
+
+    Initial Commit
